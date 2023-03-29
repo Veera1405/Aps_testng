@@ -45,6 +45,7 @@ public class TestBase implements Globalvariables {
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
 		options.addArguments("--disable-notifications");
+		options.addArguments("--remote-allow-origins=*");
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setAcceptInsecureCerts(true);
 		cap.setCapability(ChromeOptions.CAPABILITY, options);
