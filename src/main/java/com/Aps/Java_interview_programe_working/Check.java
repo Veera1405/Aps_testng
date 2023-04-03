@@ -34,6 +34,7 @@ public class Check implements Interface_for_method {
             a = b;
             b = c;
             c = a + b;
+            
             System.out.print(a + "   ");
         }
 
