@@ -1,9 +1,9 @@
 package com.Aps.Java_interview_programe_working;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Check implements Interface_for_method {
-    private Scanner scanner = new Scanner(System.in);
+    protected Scanner scanner = new Scanner(System.in);
 
     @Override
     public void using_stringbuilder() {
@@ -39,4 +39,70 @@ public class Check implements Interface_for_method {
 
 
     }
+
+    @Override
+    public void arry() {
+        List<String> arrayStrings = new ArrayList<>();
+        System.out.print("Enter the name: ");
+        for (int i = 0; i <= 4; i++) {
+            String name = scanner.nextLine();
+            arrayStrings.add(name);
+
+        }
+
+        for (String name : arrayStrings) {
+            System.out.print(name);
+
+        }
+    }
+
+    @Override
+    public void dulipcate() {
+        Set<String> uniqueNames = new HashSet<>();
+        Set<String> duplicateNames = new HashSet<>();
+
+
+        System.out.println("Enter the name: ");
+
+        List<String> strings = new ArrayList<>();
+        for (int i = 0; i <= 4; i++) {
+            String name = scanner.nextLine();
+            strings.add(name);
+        }
+
+        for (String na : strings)
+
+            if (!uniqueNames.add(na)) {
+                duplicateNames.add(na);
+            }
+        System.out.print("duplicateNames " + duplicateNames);
+    }
+
+    @Override
+    public void CountDuplicateNames() {
+        Map<String, Integer> namecounts = new HashMap<>();
+        List<String> list = new ArrayList<>();
+        System.out.print("Enter the names");
+        for (int i = 0; i <= 3; i++) {
+
+            String name = scanner.nextLine();
+            list.add(name);
+        }
+        for (String on : list) {
+            if (!namecounts.containsKey(on)) {
+                namecounts.put(on, 1);
+            } else {
+                namecounts.put(on, namecounts.get(on) + 1);
+            }
+        }
+        System.out.print("Duplicate names and counts:");
+        for (Map.Entry<String, Integer> entry : namecounts.entrySet()) {
+            if (entry.getValue() > 1) {
+                System.out.print(entry.getKey() + ":" + entry.getValue());
+            }
+        }
+
+    }
+
+
 }

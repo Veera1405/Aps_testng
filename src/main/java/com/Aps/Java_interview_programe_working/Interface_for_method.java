@@ -7,4 +7,11 @@ public interface Interface_for_method {
 
     void Fibonacci_series();
 
+    void arry();
+
+    void dulipcate();
+
+    void CountDuplicateNames();
+
+
 }
