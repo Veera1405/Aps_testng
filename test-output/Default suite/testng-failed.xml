@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Aps.test.AccountLoginTest">
+      <class name="com.Aps.test.write_xecel">
         <methods>
           <include name="configurations"/>
-          <include name="LoginTest" invocation-numbers="3"/>
+          <include name="name"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.Aps.test.AccountLoginTest -->
+      </class> <!-- com.Aps.test.write_xecel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

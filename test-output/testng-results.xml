@@ -2,49 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T17:58:58 IST" name="Suite" finished-at="2023-03-07T17:59:10 IST" duration-ms="12262">
+  <suite started-at="2023-06-06T12:43:05 IST" name="Default suite" finished-at="2023-06-06T12:43:13 IST" duration-ms="7752">
     <groups>
     </groups>
-    <test started-at="2023-03-07T17:58:58 IST" name="Test" finished-at="2023-03-07T17:59:10 IST" duration-ms="12262">
-      <class name="com.Aps.test.DownloadClientCSV">
-        <test-method is-config="true" signature="configurations(org.testng.ITestContext)[pri:0, instance:com.Aps.test.DownloadClientCSV@5e746d37, instance params:[]]" started-at="2023-03-07T17:58:58 IST" name="configurations" finished-at="2023-03-07T17:58:58 IST" duration-ms="29" status="PASS">
+    <test started-at="2023-06-06T12:43:05 IST" name="Default test" finished-at="2023-06-06T12:43:13 IST" duration-ms="7752">
+      <class name="com.Aps.test.write_xecel">
+        <test-method is-config="true" signature="configurations(org.testng.ITestContext)[pri:0, instance:com.Aps.test.write_xecel@50d13246]" started-at="2023-06-06T12:43:04 IST" name="configurations" finished-at="2023-06-06T12:43:05 IST" duration-ms="556" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@48f4713c]]>
+                <![CDATA[org.testng.TestRunner@1dfcf85a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurations -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.Aps.test.DownloadClientCSV@5e746d37, instance params:[]]" started-at="2023-03-07T17:58:58 IST" name="setup" finished-at="2023-03-07T17:59:06 IST" duration-ms="7379" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.Aps.test.write_xecel@50d13246]" started-at="2023-06-06T12:43:05 IST" name="setup" finished-at="2023-06-06T12:43:07 IST" duration-ms="2287" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.Aps.test.DownloadClientCSV.downloadcsv(java.util.Map)]]>
+                <![CDATA[public void com.Aps.test.write_xecel.name()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="downloadcsv(java.util.Map)[pri:0, instance:com.Aps.test.DownloadClientCSV@5e746d37, instance params:[]]" started-at="2023-03-07T17:59:06 IST" name="downloadcsv" description="CSV file" data-provider="testData" finished-at="2023-03-07T17:59:10 IST" duration-ms="4003" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Test_Case=TC001_AccountLogin, password=Design123$, email=digital@designpluz.com.au}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="name()[pri:0, instance:com.Aps.test.write_xecel@50d13246]" started-at="2023-06-06T12:43:07 IST" name="name" finished-at="2023-06-06T12:43:13 IST" duration-ms="5346" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadcsv -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Aps.test.DownloadClientCSV@5e746d37, instance params:[]]" started-at="2023-03-07T17:59:10 IST" name="tearDown" finished-at="2023-03-07T17:59:10 IST" duration-ms="700" status="PASS">
+        </test-method> <!-- name -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Aps.test.write_xecel@50d13246]" started-at="2023-06-06T12:43:13 IST" name="tearDown" finished-at="2023-06-06T12:43:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.Aps.test.DownloadClientCSV -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.Aps.test.write_xecel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -50,7 +50,7 @@ public class TestBase implements Globalvariables {
 		cap.setAcceptInsecureCerts(true);
 		cap.setCapability(ChromeOptions.CAPABILITY, options);
 		WebDriver driver = new ChromeDriver(options);
-		driver.get(BASE_URL);
+		// driver.get(BASE_URL);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT));
